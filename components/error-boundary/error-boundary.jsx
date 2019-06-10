@@ -39,7 +39,11 @@ class ErrorBoundary extends Component {
 };
 
 ErrorBoundary.propTypes = {
-  children: PropTypes.element.isRequired,
+  children: PropTypes.oneOf([
+    PropTypes.element,
+    PropTypes.string,
+    PropTypes.number,
+  ]).isRequired,
 };
 
 polyfill(ErrorBoundary);
