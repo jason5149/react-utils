@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { polyfill } from 'react-lifecycles-compat';
 import classname from 'classname';
 
-class ErrorBoudnary extends Component {
+class ErrorBoundary extends Component {
   state = {
     hasError: false,
     errorMessage: null,
@@ -38,10 +38,10 @@ class ErrorBoudnary extends Component {
   }
 };
 
-ErrorBoudnary.propTypes = {
+ErrorBoundary.propTypes = {
   children: PropTypes.element.isRequired,
 };
 
-polyfill(ErrorBoudnary);
+polyfill(ErrorBoundary);
 
-export default ErrorBoudnary;
+export default ErrorBoundary;
