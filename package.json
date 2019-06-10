@@ -1,6 +1,6 @@
 {
   "name": "react-utils-components",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -27,6 +27,7 @@
   "devDependencies": {
     "grunt": "^1.0.4",
     "grunt-bump": "^0.8.0",
-    "load-grunt-tasks": "^5.0.0"
+    "load-grunt-tasks": "^5.0.0",
+    "time-grunt": "^2.0.0"
   }
 }
