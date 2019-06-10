@@ -1,3 +1,3 @@
-import AsyncLoader from 'async-loader';
+import AsyncLoader from './async-loader';
 
 export default AsyncLoader;
