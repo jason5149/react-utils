@@ -16,7 +16,7 @@ gulp.task('git:add', () => {
 
 gulp.task('git:commit', () => {
   return gulp.src('./')
-    .pipe(git.commit(`Bump to version ${pkg.version}`, { args: '-m'}))
+    .pipe(git.commit(`Bump to version ${pkg.version}`, { args: '-m' }))
 });
 
 gulp.task('git:push', () => {
@@ -24,5 +24,7 @@ gulp.task('git:push', () => {
     if (err) throw err;
   });
 });
+
+
 
 gulp.task('update', ['bump', 'git:add', 'git:commit', 'git:push']);

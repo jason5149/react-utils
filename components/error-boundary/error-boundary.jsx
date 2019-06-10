@@ -39,7 +39,7 @@ class ErrorBoundary extends Component {
 };
 
 ErrorBoundary.propTypes = {
-  children: PropTypes.oneOf([
+  children: PropTypes.oneOfType([
     PropTypes.element,
     PropTypes.string,
     PropTypes.number,
